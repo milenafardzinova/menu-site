@@ -1,0 +1,310 @@
+.menu-header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+@media(max-width:800px){
+    nav{
+        gap: 20px;
+    }
+}
+
+.header-logo{
+    height: 90px;
+    width: auto;
+    padding: 5px 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+
+.booking-button{
+    background-color: transparent;
+    border: none;
+    border: 2px solid #c6ae62;
+    color: white;
+    padding: 10px 25px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+@media(max-width:800px){
+    .menu-header {
+        flex-direction: column; 
+        align-items: center;    
+        gap: 20px;              
+        padding: 20px 15px;    
+    }
+
+    nav{
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media(max-width:500px){
+    .menu-header {
+        gap: 15px; 
+    }
+
+    nav{
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .booking-button{
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 20px;
+    }
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.about-restaurant{
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.about-restaurant div{
+    width: 50%; 
+}
+.about-restaurant p{
+    color: white;
+}
+
+.about-Veranda-image{
+    width: 100%;
+    height: auto;
+}
+
+.subtitle{
+    font-size: 40px;
+    margin: 70px 0 20px 0;
+}
+
+.description{
+    font-size: 17px;
+    margin-left: 0;
+}
+
+.about-restaurant div:first-child {
+    padding-left: 8%;
+    padding-right: 5%;
+    box-sizing: border-box; 
+}
+
+@media(max-width:800px){
+    .about-restaurant {
+        flex-direction: column; 
+    }
+
+    .about-restaurant div {
+        width: 100%; 
+    }
+
+    .about-restaurant div:first-child {
+        padding: 40px 20px; 
+        text-align: center; 
+    }
+
+    .subtitle {
+        font-size: 32px;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .subtitle {
+        font-size: 26px; 
+    }
+
+    .description {
+        font-size: 15px; 
+    }
+}
+
+
+
+.menu-subtitle{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.menu-categories{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.menu-item img{
+    height: 190px;
+    width: auto;
+}
+
+main{
+    background-color: rgb(24, 24, 24);
+}
+
+.menu-item{
+    background-color: #222222;
+    color: rgb(240, 237, 225);
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.item-price{
+    color: #c6ae62;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.cold-snacks,.hot-snacks,.soups,.main-dishes, .desserts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    padding: 40px 10%;
+}
+
+.section-title{
+    padding-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 3px;
+    color: rgb(240, 237, 225);
+
+}
+
+.menu-categories{
+    padding-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    
+    .menu-subtitle {
+        font-size: 28px; 
+    }
+
+    .menu-categories {
+        flex-wrap: wrap;        
+        justify-content: center; 
+        gap: 12px 20px;         
+        padding: 10px 20px;
+    }
+
+    .cold-snacks, .hot-snacks, .soups, .main-dishes, .desserts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 30px 5%; 
+    }
+
+    .section-title {
+        padding-left: 5%;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-subtitle {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .menu-categories {
+        gap: 10px 15px;
+        padding: 10px 15px;
+    }
+
+    .menu-categories a {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .cold-snacks, .hot-snacks, .soups, .main-dishes, .desserts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 15px; 
+    }
+
+    .menu-item {
+        padding: 20px; 
+    }
+
+    .menu-item img {
+        height: 160px;
+    }
+
+    .section-title {
+        padding-left: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+
+.footer-logo{
+    height: 90px;
+    width: auto;
+}
+
+.site-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    .site-footer {
+        padding: 30px 5%; 
+        font-size: 15px;   
+    }
+    
+    .footer-logo {
+        height: 75px;
+    }
+    
+}
+@media (max-width: 500px) {
+    .site-footer {
+        flex-direction: column; 
+        gap: 20px;
+        text-align: center; 
+        padding: 40px 15px; 
+    }
+
+    .footer-logo {
+        height: 70px;
+    }
+
+    .contacts {
+        margin: 0;  
+        font-size: 14px;
+    }
+}
